@@ -1,0 +1,28 @@
+name:                pesquisa-operacional
+version:             0.1.0.0
+homepage:            https://github.com/jean-lopes/pesquisa-operacional#readme
+license:             MIT
+license-file:        LICENSE
+author:              Jean Carlo Giambastiani Lopes
+maintainer:          Jean Carlo Giambastiani Lopes
+copyright:           2017 Jean Carlo Giambastiani Lopes
+category:            undefined
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     TableauSimplex
+  build-depends:       base >= 4.7 && < 5
+                     , matrix
+                     , vector
+                     , mtl
+                     , transformers
+                     , either
+                     , lens
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jean-lopes/pesquisa-operacional
